@@ -4,13 +4,21 @@ Android library for grabbing info from link using reactive way
 ![alt tag](https://raw.githubusercontent.com/afeozzz/RxLinkClawler/master/images/0.jpg)
 ![alt tag](https://raw.githubusercontent.com/afeozzz/RxLinkClawler/master/images/1.jpg)
 
-## Inner libs:
-[jsoup](https://jsoup.org/)
-[okhttp](https://github.com/square/okhttp)
-[rxjava](https://github.com/ReactiveX/RxJava)
-[rxandroid](https://github.com/ReactiveX/RxAndroid)
-
 ## How to use:
+### Gradle:
+
+Include this code in your app gradle
+
+```
+maven {
+        url 'https://dl.bintray.com/afeozzz/RxLinkCrawler'
+    }
+    
+ compile 'io.afeozzz.android:rxlinkcrawler:1.0.1'
+```
+    
+### Implementation
+
 ```java
  Subscription subscription = RxLinkClawler.grab(okHttpClient, url))
                 .subscribeOn(Schedulers.io())
@@ -33,6 +41,12 @@ Android library for grabbing info from link using reactive way
 ## Specially:
 
 Thanks https://github.com/LeonardoCardoso/Android-Link-Preview for some ideas and regexp code
+
+## Inner libs:
+[jsoup](https://jsoup.org/)
+[okhttp](https://github.com/square/okhttp)
+[rxjava](https://github.com/ReactiveX/RxJava)
+[rxandroid](https://github.com/ReactiveX/RxAndroid)
 
 License
 -------
