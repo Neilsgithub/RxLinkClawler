@@ -10,11 +10,9 @@ Android library for grabbing info from link using reactive way
 Include this code in your app gradle
 
 ```
-maven {
-        url 'https://dl.bintray.com/afeozzz/RxLinkCrawler'
-    }
-    
- compile 'io.afeozzz.android:rxlinkcrawler:1.0.1'
+dependencies {    
+        compile 'io.afeozzz.android:rxlinkcrawler:1.0.1'
+ }
 ```
     
 ### Implementation
