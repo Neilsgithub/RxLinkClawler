@@ -11,7 +11,7 @@ Include this code in your app gradle
 
 ```
 dependencies {    
-        compile 'io.afeozzz.android:rxlinkcrawler:1.0.1'
+        compile 'io.afeozzz.android:rxlinkcrawler:1.0.2'
  }
 ```
     
