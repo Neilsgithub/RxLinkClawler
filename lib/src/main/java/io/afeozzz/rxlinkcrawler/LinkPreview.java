@@ -35,4 +35,30 @@ public class LinkPreview {
     public String getDescription() {
         return description;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+
+        if (obj == null)
+            return false;
+
+        if (this.getClass() != obj.getClass())
+            return false;
+
+        LinkPreview linkPreview = (LinkPreview) obj;
+        return this.url.equals(linkPreview.getUrl());
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + url.hashCode();
+        result = prime * result + images.hashCode();
+        result = prime * result + title.hashCode();
+        result = prime * result + description.hashCode();
+        return result;
+    }
 }
