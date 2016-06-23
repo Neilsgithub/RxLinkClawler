@@ -1,7 +1,6 @@
 # RxLinkClawler
 Android library for grabbing info from link using reactive way
 
-![alt tag](https://raw.githubusercontent.com/afeozzz/RxLinkClawler/master/images/0.jpg)
 ![alt tag](https://raw.githubusercontent.com/afeozzz/RxLinkClawler/master/images/1.jpg)
 
 ## How to use:
